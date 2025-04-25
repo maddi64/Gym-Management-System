@@ -29,13 +29,31 @@ export const protectedRoutes = [
     {
         key: 'testing',
         path: '/testing',
-        component: lazy(() => import('@/views/testing/Testing')),
+        component: lazy(() => import('@/views/testing')),
         authority: [],
     },
     {
         key: 'finances',
         path: '/finances',
         component: lazy(() => import('@/views/sales/SalesDashboard/SalesDashboard')),
+        authority: [],
+    },
+    {
+        key: 'services',
+        path: '/services',
+        component: lazy(() => import('@/views/services')),
+        authority: [],
+    },
+    {
+        key: 'program',
+        path: '/program',
+        component: lazy(() => import('@/views/program/Program')),
+        authority: [],
+    },
+    {
+        key: 'programCalendar',
+        path: '/program/calendar',
+        component: lazy(() => import('@/views/program/ProgramCalendar')),
         authority: [],
     },
     /** Example purpose only, please remove */
